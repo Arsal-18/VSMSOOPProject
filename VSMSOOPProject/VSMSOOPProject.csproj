@@ -83,6 +83,24 @@
     <Compile Include="frmCarDetails.Designer.cs">
       <DependentUpon>frmCarDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboardAdmin.Designer.cs">
+      <DependentUpon>frmDashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboardSalesman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboardSalesman.Designer.cs">
+      <DependentUpon>frmDashboardSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboardSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboardSupplier.Designer.cs">
+      <DependentUpon>frmDashboardSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInventroy.cs">
       <SubType>Form</SubType>
     </Compile>
