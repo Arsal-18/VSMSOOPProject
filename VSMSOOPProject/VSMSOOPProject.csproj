@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.6, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.6\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +54,7 @@
     <Compile Include="absUser.cs" />
     <Compile Include="clsAdmin.cs" />
     <Compile Include="clsCustomer.cs" />
+    <Compile Include="clsDBHandler.cs" />
     <Compile Include="clsInventory.cs" />
     <Compile Include="clsLogger.cs" />
     <Compile Include="clsOrder.cs" />
@@ -59,23 +63,29 @@
     <Compile Include="clsSalesman.cs" />
     <Compile Include="clsSupplier.cs" />
     <Compile Include="clsVehicleDetailGeneration.cs" />
-    <Compile Include="frmADUSalesman.cs">
+    <Compile Include="frmAddSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmADUSalesman.Designer.cs">
-      <DependentUpon>frmADUSalesman.cs</DependentUpon>
+    <Compile Include="frmAddSupplier.Designer.cs">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmADUSupplier.cs">
+    <Compile Include="frmAddVehicles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmADUSupplier.Designer.cs">
-      <DependentUpon>frmADUSupplier.cs</DependentUpon>
+    <Compile Include="frmAddVehicles.Designer.cs">
+      <DependentUpon>frmAddVehicles.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmADUVehicles.cs">
+    <Compile Include="frmDeleteSalesman.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmADUVehicles.Designer.cs">
-      <DependentUpon>frmADUVehicles.cs</DependentUpon>
+    <Compile Include="frmDeleteSalesman.Designer.cs">
+      <DependentUpon>frmDeleteSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSalesman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSalesman.Designer.cs">
+      <DependentUpon>frmAddSalesman.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCarDetails.cs">
       <SubType>Form</SubType>
@@ -100,6 +110,18 @@
     </Compile>
     <Compile Include="frmDashboardSupplier.Designer.cs">
       <DependentUpon>frmDashboardSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteSupplier.Designer.cs">
+      <DependentUpon>frmDeleteSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteVehicles.Designer.cs">
+      <DependentUpon>frmDeleteVehicles.cs</DependentUpon>
     </Compile>
     <Compile Include="frmInventroy.cs">
       <SubType>Form</SubType>
@@ -143,6 +165,24 @@
     <Compile Include="frmSignupUser.Designer.cs">
       <DependentUpon>frmSignupUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUpdateSalesman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSalesman.Designer.cs">
+      <DependentUpon>frmUpdateSalesman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateSupplier.Designer.cs">
+      <DependentUpon>frmUpdateSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUpdateVehicles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUpdateVehicles.Designer.cs">
+      <DependentUpon>frmUpdateVehicles.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmWelcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +192,18 @@
     <Compile Include="IVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDashboardAdmin.resx">
+      <DependentUpon>frmDashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginAdmin.resx">
+      <DependentUpon>frmLoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUpdateSalesman.resx">
+      <DependentUpon>frmUpdateSalesman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWelcome.resx">
+      <DependentUpon>frmWelcome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -161,6 +213,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -16,5 +16,11 @@ namespace VSMSOOPProject
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            frmLoginAdmin objAdminLogin = new frmLoginAdmin();
+            objAdminLogin.Show();
+        }
     }
 }

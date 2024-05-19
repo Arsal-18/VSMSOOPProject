@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace VSMSOOPProject
 {
-    public partial class frmDashboardAdmin : Form
+    public partial class frmUpdateSalesman : Form
     {
-        public frmDashboardAdmin()
+        public frmUpdateSalesman()
         {
             InitializeComponent();
         }
 
-        private void MenuStripAdmin_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        private void frmUpdateSalesman_Load(object sender, EventArgs e)
         {
 
         }

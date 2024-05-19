@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace VSMSOOPProject
 {
-    public partial class frmDashboardAdmin : Form
+    public partial class frmUpdateVehicles : Form
     {
-        public frmDashboardAdmin()
+        public frmUpdateVehicles()
         {
             InitializeComponent();
-        }
-
-        private void MenuStripAdmin_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

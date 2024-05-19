@@ -1,6 +1,6 @@
 ﻿namespace VSMSOOPProject
 {
-    partial class frmADUSalesman
+    partial class frmUpdateSalesman
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmUpdateSalesman
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmADUSalesman";
+            this.Name = "frmUpdateSalesman";
+            this.Text = "frmUpdateSalesman";
+            this.Load += new System.EventHandler(this.frmUpdateSalesman_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

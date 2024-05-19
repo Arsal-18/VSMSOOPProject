@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VSMSOOPProject
 {
-    public partial class frmADUSupplier : Form
+    public partial class frmDeleteSalesman : Form
     {
-        public frmADUSupplier()
+        public frmDeleteSalesman()
         {
             InitializeComponent();
         }
