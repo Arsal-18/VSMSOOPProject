@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
+        //HEAD
             this.txtbxUsername = new System.Windows.Forms.TextBox();
             this.UsernameBox = new System.Windows.Forms.Label();
             this.PasswordBox = new System.Windows.Forms.Label();
@@ -81,7 +81,7 @@
             // frmLoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-=======
+
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -173,11 +173,11 @@
             // frmLoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
->>>>>>> 12ee19f675ab48f76df6a005370627a4be6e2cb8
+            //12ee19f675ab48f76df6a005370627a4be6e2cb8
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-<<<<<<< HEAD
+            //HEAD
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.txtbxPassword);
@@ -186,7 +186,7 @@
             this.Name = "frmLoginAdmin";
             this.Text = "frmLogin";
             this.Load += new System.EventHandler(this.frmLoginAdmin_Load);
-=======
+
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -197,21 +197,20 @@
             this.Controls.Add(this.label1);
             this.Name = "frmLoginAdmin";
             this.Text = "frmLogin";
->>>>>>> 12ee19f675ab48f76df6a005370627a4be6e2cb8
+            //12ee19f675ab48f76df6a005370627a4be6e2cb8
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-<<<<<<< HEAD
+        //HEAD
         private System.Windows.Forms.TextBox txtbxUsername;
         private System.Windows.Forms.Label UsernameBox;
         private System.Windows.Forms.Label PasswordBox;
         private System.Windows.Forms.TextBox txtbxPassword;
         private System.Windows.Forms.Button btnLogin;
-=======
+
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -220,6 +219,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
->>>>>>> 12ee19f675ab48f76df6a005370627a4be6e2cb8
+        //12ee19f675ab48f76df6a005370627a4be6e2cb8
     }
 }
