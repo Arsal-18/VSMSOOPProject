@@ -16,5 +16,36 @@ namespace VSMSOOPProject
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmInventroy obj = new frmInventroy();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmLoginUser obj = new frmLoginUser();
+            obj.Show();
+
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frmLoginSalesman obj = new frmLoginSalesman();
+            obj.Show();
+
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmLoginAdmin obj = new frmLoginAdmin();
+            obj.Show();
+
+            this.Hide();
+        }
     }
 }

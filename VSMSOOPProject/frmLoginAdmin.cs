@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,51 @@ namespace VSMSOOPProject
         {
             InitializeComponent();
         }
+        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-BSVHRGN;Initial Catalog=DB_VSMSOOPProject;Integrated Security=True");
+            con.Open();
+            string username, user_password;
+
+            username = textBox1.Text;
+            user_password = textBox2.Text;
+
+            try
+            {
+                string querry = "Select * from Customers where Username = '" + textBox1 + "'and  Password = '" + textBox2 + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(querry, con);
+                DataTable dtable = new DataTable();
+                sda.Fill(dtable);
+                if (dtable.Rows.Count > 0)
+                {
+                    username = textBox1.Text;
+                    user_password = textBox2.Text;
+
+                    frmInventroy obj = new frmInventroy();
+                    obj.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Details", "Error", MessageBoxButtons.OK);
+                    textBox1.Clear();
+                    textBox2.Clear();
+
+                    textBox1.Focus();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Invalid Log in Details");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
     }
 }
