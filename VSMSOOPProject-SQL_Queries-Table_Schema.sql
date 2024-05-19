@@ -3,6 +3,7 @@
 =======
 create database DB_VSMSOOPProject
 >>>>>>> 12ee19f675ab48f76df6a005370627a4be6e2cb8
+
 -- Users Table
 CREATE TABLE Users (
     UserId INT PRIMARY KEY IDENTITY(1,1),
@@ -13,6 +14,8 @@ CREATE TABLE Users (
 	Address VARCHAR(100),
     Role VARCHAR(50)
 );
+
+
 
 -- Customer Table
 CREATE TABLE Customers (
